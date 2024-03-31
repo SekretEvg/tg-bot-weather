@@ -2,7 +2,7 @@
   width: 607px;
   height: 829px;
   margin: auto;
-  margin-top: 75px;
+  /* margin-top: 75px; */
   border-radius: 12px;
   background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
 }
@@ -74,7 +74,7 @@
 .data-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
   color: #ffffff;
 }
 
@@ -104,8 +104,9 @@
   .container {
     width: auto;
     height: auto;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 20px;
+    padding-top: 0;
   }
 
   .top-bar {
@@ -131,8 +132,8 @@
   }
 
   .weather-image img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 
   .weather-temp {
