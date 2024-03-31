@@ -68,19 +68,7 @@ const WeatherApp = () => {
 
   return (
     <div className="container">
-      <div className="top-bar">
-        <input
-          value={searchCity}
-          onChange={onChangeSearch}
-          type="text"
-          className="cityInput"
-          placeholder="Поиск..."
-          onKeyDown={onSearchKeyDown}
-        />
-        <div onClick={searchHandler} className="search-icon">
-          <img src={searchIcon} alt="Search Icon" />
-        </div>
-      </div>
+
       <div className="weather-image">
         <img src={weatherImage} alt="Weather Icon" />
       </div>
@@ -88,6 +76,7 @@ const WeatherApp = () => {
       <div className="weather-temp">{temperature} ºC</div>
       <div className="weather-condition-text">{conditionText}</div>
       <div className="weather-location">{city}</div>
+
       <div className="data-container">
         <div className="element">
           <img src={humidityIcon} alt="Humidity Icon" className="icon" />
@@ -102,6 +91,20 @@ const WeatherApp = () => {
             <div className="humidity-percent">{windSpeed} км/ч</div>
             <div className="text">Скорость ветра</div>
           </div>
+        </div>
+      </div>
+
+      <div className="top-bar">
+        <input
+          value={searchCity}
+          onChange={onChangeSearch}
+          type="text"
+          className="cityInput"
+          placeholder="Поиск..."
+          onKeyDown={onSearchKeyDown}
+        />
+        <div onClick={searchHandler} className="search-icon">
+          <img src={searchIcon} alt="Search Icon" />
         </div>
       </div>
     </div>
